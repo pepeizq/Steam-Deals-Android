@@ -1,0 +1,79 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Steam_Deals_Android.MainPage" 
+             Appearing="ContentPage_Appearing">
+
+    <Grid>
+        <WebView x:Name="wvPrincipal" Navigating="WvPrincipal_Navigating"/>
+              
+        <Grid x:Name="gridBotones" BackgroundColor="{StaticResource ColorPrimario}" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="botonSteam" Grid.Column="1" BackgroundColor="Transparent" Text="steam" TextColor="White" Clicked="BotonSteam_Clicked" WidthRequest="50">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" Android="faBrands.otf#Font Awesome 5 Brands Regular"/>
+                </Button.FontFamily>
+                <Button.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double" Android="26"/>
+                </Button.FontSize>
+            </Button>
+            <Button x:Name="botonTwitter" Grid.Column="2" BackgroundColor="Transparent" Text="twitter" TextColor="White" Clicked="BotonTwitter_Clicked" WidthRequest="50">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" Android="faBrands.otf#Font Awesome 5 Brands Regular"/>
+                </Button.FontFamily>
+                <Button.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double" Android="26"/>
+                </Button.FontSize>
+            </Button>
+            <Button x:Name="botonReddit" Grid.Column="3" BackgroundColor="Transparent" Text="reddit" TextColor="White" Clicked="BotonReddit_Clicked" WidthRequest="50">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" Android="faBrands.otf#Font Awesome 5 Brands Regular"/>
+                </Button.FontFamily>
+                <Button.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double" Android="26"/>
+                </Button.FontSize>
+            </Button>
+            <Button x:Name="botonMas" Grid.Column="5" BackgroundColor="Transparent" Text="ellipsis-h" TextColor="White" Clicked="BotonMas_Clicked" WidthRequest="50">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" Android="faSolid.otf#Font Awesome 5 Free Solid"/>
+                </Button.FontFamily>
+                <Button.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double" Android="26"/>
+                </Button.FontSize>
+            </Button>
+        </Grid>
+
+        <Grid x:Name="gridMasOpciones" IsVisible="False">
+            <ContentView BackgroundColor="{StaticResource ColorPrimario}" Opacity="0.5" VerticalOptions="FillAndExpand"/>
+            <ScrollView Margin="50">
+                <Grid Padding="50" BackgroundColor="{StaticResource ColorSecundario}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Button x:Name="botonMasOpcionesCerrar" Grid.Row="0" Margin="10" BackgroundColor="{StaticResource ColorPrimario}" TextColor="White" HorizontalOptions="End" Text="times" Clicked="BotonMasOpcionesCerrar_Clicked">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="faSolid.otf#Font Awesome 5 Free Solid"/>
+                        </Button.FontFamily>
+                        <Button.FontSize>
+                            <OnPlatform x:TypeArguments="x:Double" Android="26"/>
+                        </Button.FontSize>
+                    </Button>
+
+                    <Button x:Name="botonMasOpcionesModoTexto" Grid.Row="1" Margin="10" BackgroundColor="{StaticResource ColorPrimario}" TextColor="White" Text="Use Text Mode" IsVisible="False" Clicked="BotonMasOpcionesModoTexto_Clicked"/>
+
+                    <Button x:Name="botonMasOpcionesModoImagen" Grid.Row="1" Margin="10" BackgroundColor="{StaticResource ColorPrimario}" TextColor="White" Text="Use Image Mode" IsVisible="False" Clicked="BotonMasOpcionesModoImagen_Clicked"/>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </Grid>
+</ContentPage>

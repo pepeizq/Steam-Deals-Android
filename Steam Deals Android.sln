@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steam Deals Android.Android", "Steam Deals Android\Steam Deals Android.Android\Steam Deals Android.Android.csproj", "{610DF99B-C5AD-485C-A632-E2AC06C6D34B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steam Deals Android", "Steam Deals Android\Steam Deals Android\Steam Deals Android.csproj", "{1AA6CDB5-65C8-4151-9542-EF4BD2C15986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{610DF99B-C5AD-485C-A632-E2AC06C6D34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610DF99B-C5AD-485C-A632-E2AC06C6D34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610DF99B-C5AD-485C-A632-E2AC06C6D34B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{610DF99B-C5AD-485C-A632-E2AC06C6D34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610DF99B-C5AD-485C-A632-E2AC06C6D34B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610DF99B-C5AD-485C-A632-E2AC06C6D34B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1AA6CDB5-65C8-4151-9542-EF4BD2C15986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA6CDB5-65C8-4151-9542-EF4BD2C15986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA6CDB5-65C8-4151-9542-EF4BD2C15986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA6CDB5-65C8-4151-9542-EF4BD2C15986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44942335-D34A-4E38-A16D-63EEC8DFC61C}
+	EndGlobalSection
+EndGlobal
